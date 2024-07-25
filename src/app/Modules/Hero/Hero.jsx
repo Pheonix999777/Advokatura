@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="hero">
       <Container>
-        <div className="hero__test">
+        <div className="hero__main">
           <h1 className="hero__titile">
             Если вы не пользуетесь своими правами, то вашими правами будут
             пользоваться <span style={{ color: "#026D2A" }}>другие</span>

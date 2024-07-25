@@ -1,28 +1,14 @@
 .footer {
-  padding: 0 0 66px 0;
-}
-
-.footer__test {
-  display: flex;
-  justify-content: center;
+  padding: 15px 0 66px 0;
 }
 
 .footer__flex {
   display: flex;
   width: 100%;
-  max-width: 1360px;
-  padding-right: 20px;
 }
 
 .footer__box {
   margin-right: 20px;
-}
-
-.footer__logo-box {
-  position: relative;
-  margin-right: 20px;
-  padding-left: 20px;
-  bottom: 10px;
 }
 
 .footer__ul {
@@ -72,12 +58,7 @@
   text-decoration: none;
 }
 
-.footer__right-main {
-  width: 51%;
-}
-
 .footer__right {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

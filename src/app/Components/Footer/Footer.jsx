@@ -1,10 +1,9 @@
 "use client";
 import "./style.scss";
-import Logo from "../../../../public/imges/image 635.png";
-import Image from "next/image";
 import Container from "../Container/Container";
 import { Links, navbar } from "@/app/utils/data";
 import { useState } from "react";
+import PhoneNumber from "../PhoneNumber/PhoneNumber";
 
 export default function Footer() {
   const [active, setActive] = useState(0);
@@ -15,10 +14,7 @@ export default function Footer() {
 
   return (
     <footer className="footer">
-      <div className="footer__test">
-        <div className="footer__logo-box">
-          <Image src={Logo} alt="" width={138} height={54} />
-        </div>
+      <Container>
         <div className="footer__flex">
           <div className="footer__box">
             <ul className="footer__ul">
@@ -53,38 +49,28 @@ export default function Footer() {
               </a>
             </div>
           </div>
-
-          <div className="footer__right-main">
-            <div className="footer__right">
-              <div className="footer__right-box">
-                <a className="footer__right-email" href="">
-                  info@hmadad.com
-                </a>
-                <div className="footer__right-div">
-                  <a className="footer__right-number" href="">
-                    +(90) 123-45-67
-                  </a>
-                  <a className="footer__right-number" href="">
-                    +(71) 263 80 34
-                  </a>
-                </div>
+          <div className="footer__right">
+            <div className="footer__right-box">
+              <a className="footer__right-email" href="">
+                info@hmadad.com
+              </a>
+              <div className="footer__right-div">
+                <PhoneNumber number={"+(90) 123-45-67"} href={"#"} />
+                <PhoneNumber number={"+(71) 263 80 34"} href={"#"} />
               </div>
+            </div>
 
-              <div className="footer__right-bottom">
-                <div className="footer__right-content">
-                  FAX:{" "}
-                  <a className="footer__right-link" href="">
-                    +(71) 263 80 34
-                  </a>
-                </div>
-                <span className="footer__right-text">
-                  Понедельник - Пятница 9:00 - 18:00
-                </span>
+            <div className="footer__right-bottom">
+              <div className="footer__right-content">
+                FAX: <PhoneNumber number={"+(71) 263 80 34"} href={"#"} />
               </div>
+              <span className="footer__right-text">
+                Понедельник - Пятница 9:00 - 18:00
+              </span>
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 }
