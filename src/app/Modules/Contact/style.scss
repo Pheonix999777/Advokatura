@@ -1,0 +1,26 @@
+.contact {
+  padding: 65px 0 90px;
+}
+
+.contact__flex {
+  margin-top: 40px;
+}
+
+.contact__wrapper {
+  max-width: 292px;
+  text-align: center;
+  background: rgba(44, 54, 57, 0.07);
+  padding: 30px 55px;
+  height: 100%;
+  margin-left: 24px;
+}
+
+.contact__title {
+  color: $text-color;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.6px;
+  margin-top: 14px;
+}

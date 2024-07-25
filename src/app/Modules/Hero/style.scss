@@ -1,0 +1,49 @@
+.hero {
+  padding-bottom: 40px;
+}
+
+.hero__titile {
+  padding-top: 322px;
+  max-width: 750px;
+  color: $text-color;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 56px;
+  letter-spacing: -2.8px;
+}
+
+.hero__flex {
+  display: flex;
+}
+
+.hero__box {
+  width: 100%;
+  max-width: 397px;
+  background: #026d2a;
+  padding: 34px 30px;
+  margin-top: 40px;
+  &:nth-child(2) {
+    margin-left: 20px;
+    background: $text-color;
+  }
+}
+
+.hero__text {
+  display: block;
+  max-width: 227px;
+  color: $light;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 26px;
+}
+
+.hero__link {
+  display: inline-flex;
+  color: $light;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.51px;
+  text-decoration: none;
+  opacity: 0.4;
+  margin-top: 23px;
+}

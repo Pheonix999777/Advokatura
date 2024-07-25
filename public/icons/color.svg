@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+  <circle opacity="0.3" cx="7" cy="7" r="7" fill="#121212"/>
+  <path d="M7 0C5.14348 -2.21387e-08 3.36301 0.737498 2.05025 2.05025C0.737498 3.36301 1.62302e-07 5.14348 0 7C-1.62302e-07 8.85651 0.737498 10.637 2.05025 11.9497C3.36301 13.2625 5.14348 14 7 14L7 7V0Z" fill="#121212"/>
+  <g opacity="0.2">
+    <mask id="mask0_1537_2435" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
+      <circle cx="7" cy="7" r="7" fill="#DCD7C9"/>
+    </mask>
+    <g mask="url(#mask0_1537_2435)">
+      <line x1="-2.17678" y1="9.82322" x2="9.82322" y2="-2.17678" stroke="#121212" stroke-width="0.5"/>
+      <line x1="-1.17678" y1="10.8232" x2="10.8232" y2="-1.17678" stroke="#121212" stroke-width="0.5"/>
+      <line x1="-0.176777" y1="11.8232" x2="11.8232" y2="-0.176776" stroke="#121212" stroke-width="0.5"/>
+      <line x1="0.823223" y1="12.8232" x2="12.8232" y2="0.823224" stroke="#121212" stroke-width="0.5"/>
+      <line x1="1.82322" y1="13.8232" x2="13.8232" y2="1.82322" stroke="#121212" stroke-width="0.5"/>
+      <line x1="2.82322" y1="14.8232" x2="14.8232" y2="2.82322" stroke="#121212" stroke-width="0.5"/>
+      <line x1="3.82322" y1="15.8232" x2="15.8232" y2="3.82322" stroke="#121212" stroke-width="0.5"/>
+      <line x1="4.82322" y1="16.8232" x2="16.8232" y2="4.82322" stroke="#121212" stroke-width="0.5"/>
+      <line x1="5.82322" y1="17.8232" x2="17.8232" y2="5.82322" stroke="#121212" stroke-width="0.5"/>
+    </g>
+  </g>
+</svg>
