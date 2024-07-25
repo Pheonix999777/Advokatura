@@ -2,8 +2,14 @@
   padding-bottom: 40px;
 }
 
+.hero__test {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 140px);
+}
+
 .hero__titile {
-  padding-top: 322px;
+  margin-top: auto;
   max-width: 750px;
   color: $text-color;
   font-size: 56px;
