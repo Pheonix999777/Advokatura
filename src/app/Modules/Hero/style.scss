@@ -1,11 +1,82 @@
 .hero {
-  padding-bottom: 40px;
+  padding: 40px 0;
 }
 
-.hero__main {
-  display: flex;
-  flex-direction: column;
-  height: calc(45vw - 100px);
+.hero__modal {
+  max-width: 242px;
+  margin-left: auto;
+}
+
+.hero__modal-box {
+  background: #fff;
+  padding: 28px 24px;
+  box-shadow: -20px 44px 74px 0px rgba(15, 81, 40, 0.19);
+}
+
+.hero__modal-title {
+  color: #2c3639;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 19px;
+  letter-spacing: -0.85px;
+}
+
+.hero__modal-text {
+  color: #2c3639;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 14px;
+  margin-bottom: 8px;
+}
+
+.hero__inp {
+  width: 100%;
+  padding: 12px 10px;
+  background: rgba(44, 54, 57, 0.07);
+  color: #2c3639;
+  outline: none;
+  border: none;
+}
+
+.hero__inp::placeholder {
+  color: #2c3639;
+  font-size: 13px;
+  font-weight: 700;
+  opacity: 0.4;
+}
+
+.modal__contact-info {
+  color: #2c3639;
+  font-size: 11px;
+  font-weight: 400;
+  opacity: 0.4;
+  margin-top: 25px;
+  margin-bottom: 4pxa;
+}
+
+.modal__contact-link {
+  color: #2c3639;
+  font-size: 11px;
+  font-weight: 900;
+  text-decoration: none;
+  &:last-child {
+    color: #0047ff;
+    text-decoration-line: underline;
+    font-weight: 400;
+    margin-left: 14px;
+  }
+}
+
+.modal__contact-btn {
+  width: 100%;
+  padding: 14px 0;
+  background: #026d2a;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: -0.45px;
 }
 
 .hero__titile {
