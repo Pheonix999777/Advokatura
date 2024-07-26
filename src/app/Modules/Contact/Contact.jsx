@@ -6,7 +6,7 @@ import { Logos } from "@/app/utils/data";
 
 export default function Contact() {
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <Container>
         <span className="title">Полезные ссылки</span>
       </Container>

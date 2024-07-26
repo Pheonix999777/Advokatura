@@ -4,9 +4,9 @@ import ArrowRight from "../../../../public/icons/ArrowRight.svg";
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <Container>
-        <div className="hero__modal">
+        <form className="hero__modal">
           <div className="hero__modal-box">
             <span className="hero__modal-title">
               Бесплатная <br /> Консультация
@@ -26,8 +26,10 @@ export default function Hero() {
               info@hmadad.com
             </a>
           </div>
-          <button className="modal__contact-btn">Отправить</button>
-        </div>
+          <button type="submit" className="modal__contact-btn">
+            Отправить
+          </button>
+        </form>
 
         <h1 className="hero__titile">
           Если вы не пользуетесь своими правами, то вашими правами будут

@@ -11,7 +11,7 @@ export default function Service() {
   };
 
   return (
-    <section className="service">
+    <section className="service" id="service">
       <span className="title">Наши услуги</span>
       <ul className="service__ul">
         {data.map((item, index) => (

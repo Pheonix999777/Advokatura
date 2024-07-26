@@ -8,10 +8,12 @@ import Service from "./Service/Service";
 import { useState } from "react";
 
 export default function About() {
-  const [progress, setProgress] = useState(34);
+  const [progress, setProgress] = useState(40);
+
+  const computedWidth = progress / 3;
 
   return (
-    <section className="about">
+    <section className="about" id="about">
       <Container>
         <div className="about__main">
           <span className="title">Новости</span>
@@ -34,25 +36,27 @@ export default function About() {
                   <div className="about__progress-bg"></div>
                   <div
                     className="about__progress-fill"
-                    style={{ width: `${progress}%` }}
+                    style={{
+                      width: progress < 34 ? `${computedWidth}%` : "100%",
+                    }}
                   ></div>
                 </div>
-
-                {progress >= 34 && (
-                  <div className="about__progress">
-                    <div className="about__progress-bg"></div>
-                    <div
-                      className="about__progress-fill"
-                      style={{ width: `${progress}%` }}
-                    ></div>
-                  </div>
-                )}
 
                 <div className="about__progress">
                   <div className="about__progress-bg"></div>
                   <div
                     className="about__progress-fill"
-                    style={{ width: `${progress}%` }}
+                    style={{
+                      width: progress >= 34 ? `${computedWidth}%` : "100%",
+                    }}
+                  ></div>
+                </div>
+
+                <div className="about__progress">
+                  <div className="about__progress-bg"></div>
+                  <div
+                    className="about__progress-fill"
+                    style={{ width: `${computedWidth}%` }}
                   ></div>
                 </div>
               </div>

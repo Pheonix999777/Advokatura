@@ -8,23 +8,23 @@ import Logo from "../../../public/imges/lex-uz-logo.png";
 export const navbar = [
   {
     title: "Главная",
-    href: "/",
+    href: "#home",
   },
   {
     title: "О нас",
-    href: "#",
+    href: "#about ",
   },
   {
     title: "Услуги",
-    href: "#",
+    href: "#service",
   },
   {
     title: "Нормативы",
-    href: "#",
+    href: "#standards",
   },
   {
     title: "Контакты",
-    href: "#",
+    href: "#contact",
   },
 ];
 

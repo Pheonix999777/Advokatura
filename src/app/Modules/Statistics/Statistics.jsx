@@ -12,7 +12,7 @@ export default function Statistics() {
   };
 
   return (
-    <section className="statistics">
+    <section className="statistics" id="standards">
       <Container>
         <div class="statistics__map">
           <div className="statistics__map-box">
