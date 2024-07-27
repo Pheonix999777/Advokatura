@@ -14,7 +14,7 @@ export default function Statistics() {
   return (
     <section className="statistics" id="standards">
       <Container>
-        <div class="statistics__map">
+        <div className="statistics__map">
           <div className="statistics__map-box">
             <span className="title">Статистика</span>
 
@@ -22,12 +22,12 @@ export default function Statistics() {
               {States.map((item, index) => (
                 <path
                   key={index}
-                  class={item.class}
+                  // className={item.class}
                   fill={showAdditionalSvg === item.id ? "#51801B" : "#2C3639"}
                   stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d={item.d}
                   onClick={() => handleClick(item.id)}
                 ></path>

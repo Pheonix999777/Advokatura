@@ -3,8 +3,9 @@
 }
 
 .service__ul {
-  display: flex;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px 24px;
   list-style: none;
   margin-top: 69px;
   margin-bottom: 95px;
@@ -99,4 +100,31 @@
   padding: 56px 64px 76px 51px;
   background: $light;
   margin-left: 26px;
+}
+
+@media screen and (max-width: 900px) {
+  .service__ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .service__ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .service__ul {
+    grid-template-columns: 1fr;
+  }
+
+  .service__list {
+    max-width: 100%;
+  }
+
+  .service__title {
+    max-width: 100%;
+    margin-top: 30px;
+  }
 }

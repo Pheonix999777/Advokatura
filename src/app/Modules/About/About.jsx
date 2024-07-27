@@ -88,6 +88,7 @@ export default function About() {
                 <ArrowRightLonger />
               </div>
             </div>
+
             <Image src={Img} alt="" width={809} height={499} />
           </div>
         </div>
