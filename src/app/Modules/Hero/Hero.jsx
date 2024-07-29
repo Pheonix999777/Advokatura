@@ -8,10 +8,6 @@ import { useEffect, useState } from "react";
 export default function Hero() {
   const [show, setShow] = useState(false);
 
-  const handleToggle = () => {
-    setShow(!show);
-  };
-
   useEffect(() => {
     if (show) {
       document.body.style.overflow = "hidden";
@@ -28,7 +24,7 @@ export default function Hero() {
       <Container>
         <div
           className={`hero__modal-div ${show ? "active" : ""}`}
-          onClick={handleToggle}
+          onClick={() => setShow(false)}
         >
           <form
             className={`hero__modal ${show ? "active" : ""}`}
@@ -59,7 +55,7 @@ export default function Hero() {
           </form>
         </div>
 
-        <button className="hero__btn" onClick={handleToggle}>
+        <button className="hero__btn" onClick={() => setShow(true)}>
           <FiPhoneCall />
         </button>
 
