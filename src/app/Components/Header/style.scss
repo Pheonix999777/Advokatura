@@ -6,6 +6,7 @@
 .header__box {
   display: flex;
   align-items: center;
+  white-space: nowrap;
 }
 
 .header__logo {
@@ -14,6 +15,13 @@
   font-weight: 800;
   letter-spacing: -0.72px;
   text-decoration: none;
+}
+
+.header__menu-box {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__nav {
@@ -41,7 +49,17 @@
 .header__right {
   display: inline-flex;
   align-items: center;
-  margin-left: auto;
+}
+
+.header__right-icons {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.header__action-box {
+  margin-right: 22px;
 }
 
 .header__letter {
@@ -49,7 +67,7 @@
   font-size: 16px;
   font-weight: 500;
   margin-right: 5px;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .header__action {
@@ -65,7 +83,7 @@
 
 .header__link-box {
   position: relative;
-  top: 7px;
+  top: 9px;
   text-align: right;
 }
 
@@ -93,72 +111,89 @@
 
 .header__menu {
   display: none;
+  height: 24px;
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
-.header__close {
-  display: none;
-}
-
-@media screen and (max-width: 988px) {
+@media screen and (max-width: 998px) {
   .header__nav {
-    margin-left: 30px;
+    margin-left: 20px;
   }
 
   .header__ul {
-    gap: 20px;
+    gap: 18px;
   }
 
   .header__link {
     font-size: 14px;
   }
+
+  .header__action-box {
+    margin-right: 15px;
+  }
 }
 
 @media screen and (max-width: 900px) {
-  .header__nav {
+  .header__menu-box {
+    display: block;
     position: fixed;
-    right: -80px;
     top: 0;
-    background-color: #fff;
+    right: 0;
+    background: #f8f5f0;
     align-items: start;
-    padding: 30px;
-    width: 0px;
-    height: 100%;
-    transition: all 0.3s ease-in;
+    padding: 0 32px;
+    width: 100%;
+    height: 0;
+    transition: height 0.2s ease-in;
     z-index: 100;
+    margin-top: 80px;
     overflow: hidden;
-    margin-left: 0;
     &.active {
-      width: 320px;
+      height: 350px;
     }
   }
 
-  .header__close {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: none;
-    border: none;
-    font-size: 18px;
-    margin-left: 160px;
+  .header__right {
+    align-items: start;
+    flex-direction: column;
+    margin-top: 42px;
+  }
+
+  .header__nav {
+    padding-top: 60px;
+    margin-left: 0;
   }
 
   .header__ul {
-    flex-direction: column;
+    width: 280px;
+    flex-wrap: wrap;
+    gap: 24px 32px;
   }
 
-  .header__email {
-    display: none;
+  .header__link {
+    font-size: 16px;
   }
 
-  .header__right {
-    display: none;
+  .header__right-icons {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 18px;
+  }
+
+  .header__action-box {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  .header__link-box {
+    text-align: left;
   }
 
   .header__menu {
     display: block;
     margin-left: auto;
-    font-size: 24px;
-    border: none;
-    background: none;
   }
 }

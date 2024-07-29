@@ -5,11 +5,11 @@ import Statistics from "./Modules/Statistics/Statistics";
 
 export default function Home() {
   return (
-    <main>
+    <main style={{ position: "relative" }}>
       <Hero />
-      <About />
+      {/* <About />
       <Statistics />
-      <Contact />
+      <Contact /> */}
     </main>
   );
 }
