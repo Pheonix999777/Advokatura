@@ -30,11 +30,7 @@ export default function Header() {
             <nav className="header__nav">
               <ul className="header__ul">
                 {navbar.map((item, index) => (
-                  <li
-                    key={index}
-                    className="header__list"
-                    onClick={handleToggle}
-                  >
+                  <li key={index} className="header__list">
                     <a
                       className={`header__link ${
                         active === index ? "active" : ""
