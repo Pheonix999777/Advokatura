@@ -1,3 +1,4 @@
+// app/layout.js or app/layout.tsx (for Next.js 13+ using app directory)
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import "./sass/index.scss";
@@ -10,6 +11,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+        />
+      </head>
       <body>
         <Header />
         {children}
