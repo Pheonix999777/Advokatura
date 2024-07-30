@@ -1,4 +1,3 @@
-// app/layout.js or app/layout.tsx (for Next.js 13+ using app directory)
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import "./sass/index.scss";
