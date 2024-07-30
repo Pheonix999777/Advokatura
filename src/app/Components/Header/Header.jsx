@@ -1,7 +1,7 @@
 "use client";
 import Container from "../Container/Container";
 import "./style.scss";
-import {  navbar } from "@/app/utils/data";
+import { navbar } from "@/app/utils/data";
 import Colors from "../../../../public/icons/colors.svg";
 import Color from "../../../../public/icons/color.svg";
 import { FiPhoneCall } from "react-icons/fi";
@@ -30,11 +30,7 @@ export default function Header() {
             <nav className="header__nav">
               <ul className="header__ul">
                 {navbar.map((item, index) => (
-                  <li
-                    key={index}
-                    className="header__list"
-                    onClick={() => handleToggle(false)}
-                  >
+                  <li key={index} className="header__list">
                     <a
                       className={`header__link ${
                         active === index ? "active" : ""

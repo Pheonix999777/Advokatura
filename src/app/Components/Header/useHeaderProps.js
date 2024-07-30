@@ -7,6 +7,7 @@ export default function useHeaderProps() {
 
   const handleClick = (index) => {
     setActive(index);
+    setOpen(false);
   };
 
   const handleToggle = () => {
@@ -15,7 +16,7 @@ export default function useHeaderProps() {
 
   useEffect(() => {
     if (open) {
-      document.body.style.overflowY = "hidden";
+      document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
     }

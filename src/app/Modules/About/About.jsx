@@ -5,25 +5,10 @@ import ArrowRightLonger from "../../../../public/icons/ArrowRightLonger.svg";
 import Img from "../../../../public/imges/Rectangle 24379.png";
 import Image from "next/image";
 import Service from "./Service/Service";
-import { useState } from "react";
+import useAboutProps from "./useAboutProps";
 
 export default function About() {
-  const [progress, setProgress] = useState(50);
-
-  const segmentWidth = 100 / 3;
-
-  const getSegmentWidth = (index) => {
-    const segmentStart = index * segmentWidth;
-    const segmentEnd = (index + 1) * segmentWidth;
-
-    if (progress < segmentStart) {
-      return 0;
-    } else if (progress < segmentEnd) {
-      return ((progress - segmentStart) / segmentWidth) * 100;
-    } else {
-      return 100;
-    }
-  };
+  const { getSegmentWidth } = useAboutProps();
 
   return (
     <section className="about" id="about">

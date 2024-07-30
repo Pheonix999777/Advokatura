@@ -3,21 +3,10 @@ import Container from "@/app/Components/Container/Container";
 import "./style.scss";
 import ArrowRight from "../../../../public/icons/ArrowRight.svg";
 import { FiPhoneCall } from "react-icons/fi";
-import { useEffect, useState } from "react";
+import useHeroProps from "./useHeroProps";
 
 export default function Hero() {
-  const [show, setShow] = useState(false);
-
-  useEffect(() => {
-    if (show) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, [show]);
+  const { setShow, show } = useHeroProps();
 
   return (
     <section className="hero" id="home">
